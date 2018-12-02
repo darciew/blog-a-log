@@ -1,24 +1,3 @@
-# README
+# Blog-a-log
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Practicing building an application with Rails and React. I have chosen to use the [react on rails](https://github.com/shakacode/react_on_rails) gem developed by [Shakacodes](https://www.shakacode.com/) to build a simple blog.
