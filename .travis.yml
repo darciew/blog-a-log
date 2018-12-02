@@ -1,0 +1,16 @@
+language:
+  - ruby
+rvm:
+  - 2.5.1
+
+cache:
+  - bundler
+
+dist: trusty
+
+before_script:
+  - bundle install
+
+script:
+- bundle exec rspec
+- bundle exec rubocop
