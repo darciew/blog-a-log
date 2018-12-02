@@ -2,14 +2,25 @@ language:
   - ruby
 rvm:
   - 2.5.1
-
 cache:
   - bundler
-
+sudo: true
 dist: trusty
 
-before_script:
+env:
+  global:
+    - RAILS_ENV=test
+    - CXX=g++-4.9
+
+install:
   - bundle install
+  - chromedriver-update
+  - google-chrome --version
+  - chromedriver --version
+
+before_script:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
 
 script:
 - bundle exec rspec
